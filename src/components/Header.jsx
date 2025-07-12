@@ -8,7 +8,7 @@ const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="flex flex-wrap justify-between items-center px-4 py-4 md:px-8 bg-white dark:bg-gray-900 shadow transition-colors duration-500">
+    <nav className="flex flex-wrap justify-between items-center sticky top-0 z-10 px-4 py-4 md:px-8 bg-white dark:bg-gray-900 shadow transition-colors duration-500">
       {/* Logo */}
       <div className="text-2xl md:text-3xl font-bold uppercase text-gray-800 dark:text-white">
         Ecom

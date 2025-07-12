@@ -5,7 +5,7 @@ const ProductCard = ({ product }) => (
   <Link to={`/product/${product.id}`} className="block group">
     <Card className="h-full rounded-2xl border border-gray-200 dark:border-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out overflow-hidden bg-white dark:bg-gray-900">
       <CardContent className="p-5 flex flex-col h-full">
-        <div className="h-44 flex items-center justify-center mb-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
+        <div className="h-44 flex items-center justify-center mb-4 rounded-xl">
           <img
             src={product.image}
             alt={product.title}
