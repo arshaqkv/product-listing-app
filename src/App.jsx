@@ -1,11 +1,22 @@
-import React from 'react'
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
+import Loader from "./components/Loader";
+
+const Home = lazy(() => import("./pages/Home"));
 
 const App = () => {
   return (
-    <div>
-      <p className='bg-amber-500'>Hello world</p>
-    </div>
-  )
-}
+    <>
+      <ThemeProvider>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Suspense>
+      </ThemeProvider>
+    </>
+  );
+};
 
-export default App
+export default App;
