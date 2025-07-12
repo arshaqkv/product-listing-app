@@ -43,7 +43,7 @@ const Home = () => {
       <Header />
       <div className="p-4 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
         {/* Sidebar Filter */}
-        <aside className="md:col-span-1 bg-white dark:bg-gray-900 p-4 rounded-md shadow relative">
+        <aside className="md:col-span-1 bg-white dark:bg-gray-900 p-4 rounded-md shadow">
           <ProductFilters
             categories={categories}
             onSearch={(search) => setFilter((prev) => ({ ...prev, search }))}
